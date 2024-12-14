@@ -3,8 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Charger le dataset
-DATA_PATH = 'E:/GLSI-3eme-année-s1/Machine Learning/ProjectMachine Learning/Data/Netflix_Movies_and_TV_Shows.csv'
-df = pd.read_csv(DATA_PATH)
+#DATA_PATH = 'E:/GLSI-3eme-année-s1/Machine Learning/ProjectMachine Learning/Data/Netflix_Movies_and_TV_Shows.csv'
+#df = pd.read_csv('Netflix_Movies_and_TV_Shows.csv')
+df = pd.read_csv('Data/Netflix_Movies_and_TV_Shows.csv')
 
 # Nettoyer les données
 df['duration_numeric'] = df['Duration'].str.extract('(\d+)').astype(float)  # Convertir la durée en numérique
